@@ -1,0 +1,11 @@
+<div>Enter at least 3 characters and press enter to search for entries: </div>
+<div>
+    <input type="text" (change)="searchTextChanged($event)" />
+</div>
+<div>
+    <ul>
+        <li *ngFor="let entry of foundEntries;">
+          {{entry.name}} {{entry.phoneNumber}}
+        </li>
+      </ul>
+</div>
